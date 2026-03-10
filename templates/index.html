@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Debugging Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🐍 AI Python Debugging Assistant</h1>
+
+<form method="post" action="/debug">
+
+<textarea name="code" placeholder="Paste your Python code here..."></textarea>
+
+<br><br>
+
+<button type="submit">Analyze Code</button>
+
+</form>
+
+{% if result %}
+<div class="result">
+<h3>Debug Result</h3>
+<pre>{{ result }}</pre>
+</div>
+{% endif %}
+
+</div>
+
+</body>
+
+</html>
+</html>
